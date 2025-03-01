@@ -66,5 +66,10 @@ export CUDA_HOME="$CUDA_PATH"
 source "$CONDA_ROOT_PREFIX/etc/profile.d/conda.sh" # otherwise conda complains about 'shell not initialized' (needed when running in a script)
 conda activate "$INSTALL_ENV_DIR"
 
+# Install the required Python packages
+pip install -r requirements.txt
+
+echo "Installation complete!"
+
 # setup installer env
 python one_click.py $@
