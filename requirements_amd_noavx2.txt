@@ -24,7 +24,7 @@ transformers==4.48.*
 tqdm
 wandb
 matplotlib-inline==5.10.1
-yaml
+PyYAML
 
 # API
 SpeechRecognition==3.10.0
